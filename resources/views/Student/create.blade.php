@@ -33,7 +33,7 @@
 
   @if($errors->any())
     <script>
-      swal("{{__('students.title_alert.error')}}", "{{__('students.message.error')}}", "error", {
+      swal("{{__('students.alert_title.error')}}", "{{__('students.message.error')}}", "error", {
         button: "Ok"
       });
     </script>
