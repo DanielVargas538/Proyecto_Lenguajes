@@ -21,7 +21,7 @@ return [
         'edit' => 'Actualizar :attribute'
     ],
 
-    'title_alert' => [
+    'alert_title' => [
         'create' => 'Registrado',
         'edit' => 'Actualizado',
         'delete' => 'Eliminado',
