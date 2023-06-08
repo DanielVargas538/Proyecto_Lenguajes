@@ -46,7 +46,7 @@ class StudentController extends Controller
 
         $students->save();
         
-        return redirect('/students')->with('success',  __('students.message.create', ['attribute' => __('students.student')]))->with('title', __('students.title_alert.create'));
+        return redirect('/students')->with('success',  __('students.message.create', ['attribute' => __('students.student')]))->with('title', __('students.alert_title.create'));
     }
 
     /**
@@ -89,7 +89,7 @@ class StudentController extends Controller
         $student->identification = $request->get('identification');
 
         $student->save();
-        return redirect('/students')->with('success',  __('students.message.edit',['attribute' => __('students.student')]))->with('title', __('students.title_alert.edit'));
+        return redirect('/students')->with('success',  __('students.message.edit',['attribute' => __('students.student')]))->with('title', __('students.alert_title.edit'));
     }
 
     /**
@@ -102,6 +102,6 @@ class StudentController extends Controller
     {
         $student = Student::find($id);
         $student->delete();
-        return redirect('/students')->with('success',  __('students.message.delete', ['attribute' => __('students.student')]))->with('title', __('students.title_alert.delete'));
+        return redirect('/students')->with('success',  __('students.message.delete', ['attribute' => __('students.student')]))->with('title', __('students.alert_title.delete'));
     }
 }
